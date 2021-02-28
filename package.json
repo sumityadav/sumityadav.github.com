@@ -11,8 +11,8 @@
     "tailwindcss": "^2.0.3"
   },
   "scripts": {
-    "dev": "npx tailwindcss-cli@latest build tailwind.css -c ./tailwind.config.js  -o styles.css",
-    "prod": "NODE_ENV=production npx tailwindcss-cli@latest build tailwind.css -c ./tailwind.config.js  -o styles.css"
+    "dev": "postcss tailwind.css -o styles.css",
+    "prod": "NODE_ENV=production postcss tailwind.css -o styles.css"
   },
   "homepage": "https://sumityadav.com"
 }
